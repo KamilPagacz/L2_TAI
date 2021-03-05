@@ -11,3 +11,8 @@ body{
     border: 2px solid rgb(128, 128, 128);
     max-width: 512px;
 }
+
+.img {
+	width: 100px;
+	height: auto;
+}
