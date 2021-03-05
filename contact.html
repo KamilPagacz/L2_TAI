@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>My unique page title</title>
+</head>
+<body>
+    <div class="form_border">
+        <div class="form_div">
+            <form name="personal_form" action="">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <label for="name_input" class="form-label">Imię:</label>
+                        <input type="text" class="form-control" id="name_input" placeholder="Podaj imię">
+                    </div>
+                    <div class="col-6">
+                        <label for="surname_input" class="form-label">Nazwisko:</label>
+                        <input type="text" class="form-control" id="surname_input" placeholder="Podaj nazwisko">
+                    </div>
+                    <div class="col-12">
+                        <label for="email_input" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email_input" placeholder="Podaj email">
+                    </div>
+                    <fieldset class="cols">
+                        <legend class="col-form-label col-sm-2 pt-0">Płeć:</legend>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                Mężczyzna
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
+                                <label class="form-check-label" for="gridRadios2">
+                                Kobieta
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="row-12">
+                        <label for="description_input" class="form-label">Opis:</label>
+                        <textarea rows="4" class="form-control" id="decription_input"></textarea>
+                    </div>
+                    <div class="col-6">
+                        <label for="age_input" class="form-label">Wiek:</label>
+                        <div class="col-12">
+                          <input class="form-control" type="number" value="18" id="age_input" min="1" max="100">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="inlineFormSelectPref" class="form-label">Stan cywilny:</label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                          <option selected>Panna/Kawaler</option>
+                          <option value="1">Narzeczona/Narzeczony</option>
+                          <option value="2">Żona/Mąż</option>
+                          <option value="3">Wdowa/Wdowiec</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <button type="clear" class="btn btn-primary">Wyczyść</button>
+                      </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">Wyślij</button>
+                      </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,3 +1,13 @@
 body{
     background-color: rgb(183, 255, 231);
+    margin: 32px;
+}
+
+.form_div{
+    padding: 32px;
+}
+
+.form_border{
+    border: 2px solid rgb(128, 128, 128);
+    max-width: 512px;
 }
