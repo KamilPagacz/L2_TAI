@@ -1,18 +1,41 @@
-body{
+body {
     background-color: rgb(183, 255, 231);
+}
+
+.row {
     margin: 32px;
 }
 
-.form_div{
-    padding: 32px;
-}
-
-.form_border{
+.form_border {
     border: 2px solid rgb(128, 128, 128);
     max-width: 512px;
+    margin: 32px;
 }
 
 .img {
 	width: 100px;
 	height: auto;
 }
+
+.my-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    font-weight: 400;
+    color: black;
+    background-color: grey;
+    width: 100%;
+ }
+
+ .navbar {
+    font-weight: bold;
+    padding: 24px;
+    width: 100%;
+    background-color:tan;
+ }
+
+ .navbar a {
+    padding: 32px;
+ }
