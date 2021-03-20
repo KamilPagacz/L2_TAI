@@ -195,9 +195,7 @@ fetch('https://quiztai.herokuapp.com/api/quiz')
 
             //my history array
             let answerClicked = new Array(preQuestions.length);
-            for(let i=0; i<preQuestions.length; i++){
-                answerClicked[i] = [false, null];
-            }
+            clearHistory();
 
             //function calls
             setQuestion(index);
@@ -279,6 +277,12 @@ fetch('https://quiztai.herokuapp.com/api/quiz')
                 }
             }
 
+            function clearHistory(){
+                for(let i=0; i<preQuestions.length; i++){
+                    answerClicked[i] = [false, null];
+                }
+            }
+
             //event listeners
             previous.addEventListener('click', function () {
                 if (index > 0) {
@@ -306,10 +310,9 @@ fetch('https://quiztai.herokuapp.com/api/quiz')
                 event.preventDefault();
                 index = 0;
                 points = 0;
-                let userScorePoint = document.querySelector('.score');
                 userScorePoint.innerHTML = points;
+                clearHistory();
                 setQuestion(index);
-                activateAnswers();
                 list.style.display = 'block';
                 results.style.display = 'none';
             });
